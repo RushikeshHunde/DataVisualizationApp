@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>DataVisualizationApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+    <servlet>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <servlet-class>com.datavisualization.FileUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <url-pattern>/FileUploadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>VisualizeServlet</servlet-name>
+        <servlet-class>com.datavisualization.VisualizeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VisualizeServlet</servlet-name>
+        <url-pattern>/VisualizeServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
